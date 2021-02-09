@@ -1,0 +1,37 @@
+﻿/* MyhtmlのCSS(colorTypeC)（2020.1.24　K.seto) */
+
+@charset "UTF-8";
+
+/* ★★color set★★ */
+body{
+	color:#454d66;		/* 文字色 １*/
+}
+
+header,footer {
+	background:linear-gradient(#009975, #58b368);
+				/* 背景色 ２→３*/
+
+}
+
+main,aside{
+	background:linear-gradient(#d9d872, #58b368);
+				/* 背景色 ４→３*/
+}
+
+header,main,aside,footer {
+	border-color:#454d66;	/* 線の色　１*/
+}
+
+li a:hover{
+	color:#d9d872;		/* マウスオーバー時の文字色　４*/
+	background-color:#454d66;	/* 背景色 １*/
+}
+
+th{
+	background-color: #009975;	/* 背景色　２ */
+	color:#ffffff;		/* 文字色　０*/
+}
+
+td{
+	background-color: #ffffff;	/* 背景色 ０*/
+}

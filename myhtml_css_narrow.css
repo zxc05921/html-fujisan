@@ -1,0 +1,82 @@
+﻿/* MyHtml用CSS　（2020/2/1　K.Seto） */
+
+@charset "UTF-8";
+
+/* ★★BoxModel(Bor/Mar/Pad)★★ */
+header,main,aside,footer {
+	border: solid 10px #464159;
+	border-radius: 10px;	/* 角丸*/
+	box-shadow: 4px 4px 8px;	/* 影*/
+	margin:5px;
+	padding:5px;
+}
+
+/* ★★BoxModel(Wid/Hei)★★ */
+    /*
+    960=(5(m)+10(b)+5(p)+640+5(p)+10(b)+5(m))
+             +(5(m)+10(b)+5(p)+240+5(p)+10(b)+5(m))
+    960=5(m)+10(b)+5(p)+920+5(p)+10(b)+5(m)
+　（border:10px、padding:5px）
+
+    */
+body{
+	width:480px;
+	margin-left: auto;		/* bodyをセンタリング */
+	margin-right: auto;		/* bodyをセンタリング */
+}
+
+header {
+	width: 480px;		/* 箱の大きさ調整 */
+/*	height: 120px;		/* 箱の大きさ調整 */
+	text-align: center;		/* テキストをセンタリング */
+}
+
+main{
+	width: 480px;		/* 箱の大きさ調整 */
+/*	height: 700px;		/* 箱の大きさ調整 */
+/*	float:  left;		/* 要素を右に回り込ませる */
+}
+
+aside{
+	width: 480px;		/* 箱の大きさ調整 */
+/*	height: 700px;		/* 箱の大きさ調整 */
+/*	float:  left;		/* 要素を右に回り込ませる */
+}
+
+.clear_box{
+    	clear:both;
+}
+
+footer{
+	width: 480px;		/* 箱の大きさ調整 */
+/*	height: 20px;		/* 箱の大きさ調整 */
+	text-align: center;		/* テキストをセンタリング */
+}
+
+/* ★★Tag（h1～h6）★★ */
+
+h1{
+	font-size:1.5em;
+}
+
+h2{
+	font-size:1.2em;
+}
+
+/* ★★Tag（list）★★ */
+
+nav ul li{ 	
+	/*display: inline;		/* navのliを横並び  */
+	display: inline-block;	/* navのliを横並び(こちらの場合大きさを指定できる） */
+	width:130px;		/* 幅をそろえる */
+} 
+
+/* ★★Tag（table）★★ */
+
+table{
+	border-collapse:  collapse;	/* セルの線を重ねる */
+}
+
+th,td{
+	border: solid 1px;		/* 枠線指定 */
+}
